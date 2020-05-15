@@ -20,41 +20,45 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+
 <style>
 
-    /* Add some padding on document's body to prevent the content
-    to go underneath the header and footer */
-    body{
-        padding-top: 60px;
-        padding-bottom: 40px;
-    }
-    .container{
-			overflow: hidden;
-        width: 80%;
-        margin: 0 auto; /* Center the DIV horizontally */
-    }
-    .fixed-header, .fixed-footer{
-        width: 100%;
-        position: fixed;
-        background: #55BCC9;
-        padding: 60px 0;
-        color: #fff;
-    }
-    .fixed-header{
-        top: 0;text-align:center;font-family: Lato-Bold;
+* {box-sizing: border-box;}
 
-    }
+body {
+  margin: 0;
+}
 
-    .container p{
-        line-height: 200px; /* Create scrollbar to test positioning */
-    }
+.header {
+  overflow: hidden;
+  text-align:center;
+  font-family: Lato-Bold;
+  background-color: #55BCC9;
+  color: #fff;
+
+  padding: 20px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
 </style>
 </head>
 <body>
 
  <header>
-	 <div class="fixed-header">
- 	        <div class="container">
+	 <div class="header">
+
  	            <h1>Exploring microbial ecology and evolution with genome scale metabolic models</h1>
 							<h1>&nbsp</h1>
 							<h1>&nbsp</h1>
@@ -84,7 +88,7 @@
 							<tbody>
 								<tr class="row100 body">
 									<td class="cell100 column1"><p><a href="https://github.com/danielriosgarza/danielriosgarza.github.io/raw/master/supplentary_files/Supplementary_Table_S2.xlsx">Table S2.2</a></p></td>
-									<td class="cell100 column2">blablablabla</td>
+									<td class="cell100 column2">bla</td>
 
 
 								</tr>
