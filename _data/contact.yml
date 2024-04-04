@@ -3,16 +3,27 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+#- type: twitter
+#  icon: "fa-brands fa-x-twitter"
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
+#- type: rss
+#  icon: "fas fa-rss"
+#  noblank: true
+
+- type: researchGate
+  icon: "fa-brands fa-researchgate"   # icons powered by <https://fontawesome.com/>
+  url:  https://www.researchgate.net/profile/Daniel-Garza-7                  # Fill with your Mastodon account page, rel="me" will be applied for verification
+
+- type: googleScholar
+  icon: "fa-brands fa-google-scholar"   # icons powered by <https://fontawesome.com/>
+  url:  https://scholar.google.com.br/citations?user=LDOgr_oAAAAJ&hl                  # Fill with your Mastodon account page, rel="me" will be applied for verification
+
+
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
