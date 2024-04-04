@@ -21,5 +21,5 @@ In this page you can find my publications, usually with some (bonus) comments. A
 I define my research interest in the comprehensive (and emergent) field of [microbial systems ecology & evolution](). However, I am interested in (and inspired by) a broad range of topics & 'Masters'. To avoid a long text describing them (which would likely never be read), my research interests are in the posts with [tags]() like MyResearchInterests, MyResearchInterests, MyProject.
 
 
-> Feel free to [contact me](malito:danielriosgarza@gmail.com?) if you are interested in collaborating, giving a talk in our unit, visiting Paris, etc.
+> [contact me](malito:danielriosgarza@gmail.com?) if you are interested in collaborating, giving a talk in our unit, visiting Paris, etc.
 {: .prompt-tip }
