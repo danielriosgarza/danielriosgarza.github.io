@@ -1,0 +1,148 @@
+.archives-container {
+    margin-left: 250px; /* if you have a 250px-wide fixed sidebar */
+    padding: 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  
+  .archives-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: "Orbitron", sans-serif;
+  }
+  
+  /* The timeline container */
+  .timeline {
+    position: relative;
+    margin: 2rem 0;
+  }
+  
+  /* 
+    The vertical line. 
+    Push this further right so the date box (on the left) 
+    doesn't collide with the node.
+  */
+
+  /*line */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 175px; /* was 180px; moved further right */
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ccc;
+  }
+  
+  /* Each item: date box + node + article */
+  .timeline-item {
+    position: relative;
+    display: flex; 
+    align-items: flex-start;
+    margin: 2.5rem 0;
+  }
+  
+  /* DATE BOX (blue-shaded) on the left */
+  .timeline-date {
+    display: flex;
+    width: 120px;
+    padding: 0.6rem;
+    background-color: #cfe2ff;
+    border: 1px solid #7da8fb;
+    border-radius: 6px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    position: relative; /* so we can draw a connector line from here */
+  }
+  
+  /* ARTICLE BOX on the right */
+  .timeline-article {
+    position: relative;
+    /* Increase margin-left so the article is well to the right of the node */
+    margin-left: 165px; /* was 60px; bumped to 80px */
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .timeline-article:hover {
+    background-color: #e3e3e3;
+  }
+  
+  /* 
+    1) The node (circle) on the main timeline 
+    2) We'll also draw the line from the node to the article
+  */
+  /* Node (circle) */
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+  
+    /* Place the node exactly where the timeline line is: left: 220px */
+    left: 168px;
+  
+    /* 
+      Vertical offset so it lines up roughly with the middle 
+      of the date & article. Adjust as needed.
+    */
+    top: 1.0rem; 
+  
+    width: 14px;
+    height: 14px;
+    background-color: #060709; 
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #ccc;
+  }
+  
+  /* Short horizontal connector from node -> article */
+  .timeline-item::after {
+    content: "";
+    position: absolute;
+  
+    /* Start just right of the circle: 220px + 50px = 270px */
+    left: 188px;
+  
+    /* Match the node’s top plus half its height for perfect alignment:
+       e.g., top: 1.5rem + ~7px offset = 2.2rem
+    */
+    top: 1.5rem;
+  
+    /* Enough width to reach the article (we set margin-left: 80px) */
+    width: 100px; 
+    height: 3px;
+    background-color: #ccc;
+  }
+  
+  /* 
+    Connector from node -> date box 
+    We'll attach this line to the date box via a pseudo-element.
+    The node is at 220px; the date box ends around 120px wide.
+  */
+  .timeline-date::after {
+    content: "";
+    position: absolute;
+  
+    /* 
+      Right edge of the date box is at ~0 (since it's 120px wide in flex).
+      The node is at 220px. So we have about 100px gap (220 - 120 = 100).
+      We'll place the connector so it stretches from the date box to the node.
+    */
+    right: -48px; /* negative means 100px to the right of the date box's container */
+    
+    /* 
+      Vertical offset. We'll pick ~1.6rem to align with the node. 
+      Adjust to match the .timeline-item::before top exactly. 
+    */
+    top: 1.2rem; 
+  
+    width: 45px; /* the gap from the date box to the node */
+    height: 10px;
+    background-color: #ccc;
+  }
+  

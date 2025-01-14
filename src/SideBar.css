@@ -1,0 +1,89 @@
+/* SideBar container */
+/* SideBar container */
+.sidebar {
+    background-color: #f0f0f0;
+    width: 250px;
+  
+    /* Pin the sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+  
+    /* Let the sidebar content scroll if it exceeds 100vh */
+    overflow-y: auto;
+  
+    /* Use flex for top/bottom layout, but remove space-between if it causes clipping */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;  <-- remove or comment out */
+  
+    box-sizing: border-box; /* Ensures padding is included in the total width/height */
+    padding: 1.5rem;
+  }
+    
+  
+  /* Profile section (Top) */
+  .sidebar-profile {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .profile-description {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333; /* Darker text for contrast */
+  }
+  
+  /* Navigation */
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-nav ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar-nav ul li:hover {
+    color: #666;
+  }
+  
+  .nav-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Bottom icons (GitHub, Email, etc.) */
+  .sidebar-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto; /* Push this to the bottom */
+    padding-top: 1rem;
+  }
+  
+  .sidebar-bottom a {
+    font-size: 1.3rem;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar-bottom a:hover {
+    color: #666;
+  }
+  

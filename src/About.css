@@ -1,0 +1,125 @@
+/* About.css */
+
+.about-container {
+    /* Offset the content by the width of the fixed sidebar */
+    margin-left: 250px; /* Ensure this matches your sidebar's width */
+    padding: 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Optional: Set your desired background */
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* Space between image and text */
+    max-width: 900px; /* Optional: Limit the maximum width */
+    margin: 0 auto; /* Optional: Center the content horizontally */
+  }
+  
+  .about-image {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Optional: Add a border or shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text {
+    flex: 1;
+    color: #333333;
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "Orbitron", sans-serif; /* Or another font if desired */
+  }
+  
+  .about-text p {
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  
+  .circle-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    counter-reset: circle-count; /* Initialize counter */
+  }
+  
+  .circle-list li {
+    counter-increment: circle-count; /* Increment counter for each list item */
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 3rem; /* Space for the circle */
+  }
+  
+  .circle-list li::before {
+    content: counter(circle-count);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: #8ebaff; /* Circle background color */
+    color: #ffffff; /* Number color */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem; /* Vertically center the number */
+    font-weight: bold;
+  }
+  
+  .contact-prompt {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .about-icons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .contact-icon {
+    width: 30px;
+    height: 30px;
+    color: #333333;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    color: #8ebaff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-image {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .about-text {
+      font-size: 0.95rem;
+    }
+  
+    .circle-list li {
+      padding-left: 2.5rem;
+    }
+  
+    .circle-list li::before {
+      width: 1.8rem;
+      height: 1.8rem;
+      line-height: 1.8rem;
+      font-size: 1rem;
+    }
+  }
+  

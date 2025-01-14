@@ -1,0 +1,162 @@
+/* Home.css */
+
+/* Import a futuristic font for headings */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* Section Container */
+.cyber-container {
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  min-height: 100vh;
+  padding: 2rem;
+  color: #333;
+  font-family: "Orbitron", sans-serif;
+
+  /* If the sidebar is fixed at 250px, shift your main content */
+  margin-left: 250px;
+
+  /* Flex layout for vertical stacking */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Header */
+.cyber-header {
+  font-size: 2.0rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-shadow:
+    0 0 4px #8ebaff,
+    0 0 10px #8ebaff,
+    0 0 20px #8ebaff;
+  animation: pastelNeonPulse 4s infinite;
+}
+
+/* Container for all article cards */
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* default for larger screens */
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; /* Center the grid */
+}
+
+@media (max-width: 600px) {
+  .articles-list {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
+}
+
+/* Individual Article Card */
+.article-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer; /* So the card is obviously clickable */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Article Image */
+.article-image {
+  width: 80%; /* Set desired width less than 100% */
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  max-height: 200px; /* Optional: Limit the maximum height */
+  object-fit: cover;
+  display: block;
+  margin: 1rem auto 0 auto; /* Center horizontally with top margin */
+  border-radius: 4px; /* Optional: Rounded corners for the image */
+}
+
+/* Article Title */
+.article-title {
+  font-size: 0.9rem;
+  margin: 1rem;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Article Summary */
+.article-summary {
+  font-size: 0.7rem;
+  margin: 0 1rem 1rem 1rem;
+  line-height: 1.4;
+  color: #555;
+  text-align: center;
+}
+
+/* Article Authors */
+.article-authors {
+  font-size: 0.5rem;
+  font-style: italic;
+  margin: 0 1rem 1rem 1rem;
+  line-height: 1.4;
+  color: #555;
+  text-align: center;
+}
+
+/* Read More Button */
+.read-more-button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: #1F51FF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.read-more-button:hover {
+  background-color: #f7f7f7;
+  color: #111010;
+}
+
+/* Gentle Pastel Pulse Animation */
+@keyframes pastelNeonPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 4px #8ebaff,
+      0 0 10px #8ebaff,
+      0 0 20px #8ebaff;
+  }
+  50% {
+    text-shadow:
+      0 0 8px #8ebaff,
+      0 0 14px #8ebaff,
+      0 0 24px #8ebaff;
+  }
+}
+
+/* Pill styling for categories */
+.article-categories {
+  margin: 0.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap; /* Let them wrap if too many */
+}
+
+.category-pill-home {
+  display: inline-block;
+  background-color: #8ebaff;
+  color: #121313;
+  border-radius: 12px;
+  padding: 0.3rem 0.6rem;
+  margin: 0 0.3rem 0.3rem 0;
+  text-decoration: none;
+  font-size: 0.65rem;
+  transition: background-color 0.2s ease;
+}
+
+.category-pill:hover {
+  background-color: #5b8bd8;
+}

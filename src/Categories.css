@@ -1,0 +1,49 @@
+.categories-container {
+    /* If you have a fixed sidebar at 250px width, offset the container */
+    margin-left: 250px; 
+    padding: 3rem;
+    /* other styles as desired */
+  }
+  
+  .categories-title {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-family: "Orbitron", sans-serif;
+    /* your neon or glow styles if needed */
+  }
+  
+  .categories-list {
+    display: flex;
+    flex-wrap: wrap; /* allows multiple lines if you have many categories */
+    gap: 2.5rem;
+  }
+  
+  /* Example pill styling */
+  .category-pill {
+    display: inline-block;
+    background-color: #95e6ff;
+    color: #121313;
+    border-radius: 12px;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    font-size: 2.6rem;
+    transition: background-color 0.2s ease;
+    
+  }
+  .category-pill-home {
+    display: inline-block;
+    background-color: #95e6ff;
+    color: #121313;
+    border-radius: 12px;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    font-size: 0.6rem;
+    transition: background-color 0.2s ease;
+    
+  }
+  
+  .category-pill:hover {
+    background-color: #f7f7f7;
+  }
+  
