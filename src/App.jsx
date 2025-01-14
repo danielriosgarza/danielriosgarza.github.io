@@ -82,6 +82,16 @@ function App() {
     },
     {
       id: 8,
+      title: "Towards predicting the environmental metabolome from metagenomics with a mechanistic model",
+      authors:"Daniel Rios Garza, Marcel C. van Verk, Martijn A. Huynen, Bas E. Dutilh",
+      image: "/assets/img/garza2018.png",
+      summary: "The environmental metabolome and metabolic potential of microorganisms are dominant and essential factors shaping microbial community composition",      
+      categories: ["genome-scale metabolic models", "computational metabolome"],
+      date: "2018-03-12",
+      link: "https://www.nature.com/articles/s41564-018-0124-8"
+    },
+    {
+      id: 9,
       title: "Nutrition or nature: using elementary flux modes to disentangle ...prokaryote pan-genomes",
       authors:"Daniel R Garza, FA Bastiaan von Meijenfeldt, Bram van Dijk, Annemarie Boleij, Martijn A Huynen, Bas E Dutilh",
       image: "/assets/img/garza2022.png",
@@ -91,7 +101,7 @@ function App() {
       link: "https://link.springer.com/article/10.1186/s12862-022-02052-3"
     },
     {
-      id: 9,
+      id: 10,
       title: "Bacterial oncotraits rather than spatial organization are associated with dysplasia in ulcerative colitis",
       authors:"Carlijn E Bruggeling, Maarten te Groen, Daniel R Garza,...Annemarie Boleij",
       image: "/assets/img/bruggeling2024.jpeg",
@@ -101,7 +111,7 @@ function App() {
       link: "https://academic.oup.com/ecco-jcc/article/17/11/1870/7181091?login=true"
     },
     {
-      id: 10,
+      id: 11,
       title: "BCG-induced trained immunity enhances acellular pertussis vaccination responses...",
       authors:"Joshua Gillard, Bastiaan A. Blok, Daniel R. Garza, Prashanna Balaji Venkatasubramanian...",
       image: "/assets/img/gillard2022.png",
@@ -111,7 +121,7 @@ function App() {
       link: "https://www.nature.com/articles/s41541-022-00438-4"
     },
     {
-      id: 11,
+      id: 12,
       title: "A Prioritized and Validated Resource of Mitochondrial Proteins in Plasmodium...",
       authors:"Selma L van Esveld...Bas E Dutilh, Daniel R Garza...Martijn A Huynen",
       image: "/assets/img/esveld2021.png",
@@ -121,7 +131,7 @@ function App() {
       link: "https://journals.asm.org/doi/full/10.1128/msphere.00614-21"
     },
     {
-      id: 12,
+      id: 13,
       title: "Optimized bacterial DNA isolation method for microbiome analysis of human tissues",
       authors:"Carlijn E. Bruggeling, Daniel R. Garza, Soumia Achouiti, Wouter Mes, Bas E. Dutilh, Annemarie Bolei",
       image: "/assets/img/bruggeling2021.jpeg",
@@ -131,7 +141,7 @@ function App() {
       link: "https://onlinelibrary.wiley.com/doi/full/10.1002/mbo3.1191"
     },
     {
-      id: 13,
+      id: 14,
       title: "Novel insights from the Plasmodium falciparum sporozoite-specific proteome by probabilistic integration...",
       authors:"Lisette Meerstein-Kessel,Jeron Venhuizen,Daniel Garza, ..., Martijn A. Huynen",
       image: "/assets/img/meersteinkessel2021.png",
@@ -141,7 +151,7 @@ function App() {
       link: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008067"
     },
     {
-      id: 14,
+      id: 15,
       title: "Metabolic models predict bacterial passengers in colorectal cancer",
       authors:"Daniel Rios Garza, Rahwa Taddese, Jakob Wirbel, Georg Zeller, Annemarie Boleij, Martijn A. Huynen & Bas E. Dutilh",
       image: "/assets/img/garza2020.png",
@@ -151,7 +161,7 @@ function App() {
       link: "https://link.springer.com/article/10.1186/s40170-020-0208-9"
     },
     {
-      id: 15,
+      id: 16,
       title: "Growth rate alterations of human colorectal cancer cells by 157 gut bacteria",
       authors:"Rahwa Taddese,Daniel Rios Garza, ...Bas E. Dutilh, Annemarie Boleij",
       image: "/assets/img/taddese2020.jpg",
@@ -161,7 +171,7 @@ function App() {
       link: "https://doi.org/10.1080/19490976.2020.1799733"
     },
     {
-      id: 16,
+      id: 17,
       title: "Elucidating genomic gaps using phenotypic profiles",
       authors:"Daniel A. Cuevas, Daniel Garza...Robert A. Edwards",
       image: "/assets/img/cuevas2016.png",
@@ -169,16 +179,6 @@ function App() {
       categories: ["genome-scale metabolic models", "computational metabolome", "gap-filling"],
       date: "2016-10-17",
       link: "https://f1000research.com/articles/3-210"
-    },
-    {
-      id: 17,
-      title: "Towards predicting the environmental metabolome from metagenomics with a mechanistic model",
-      authors:"Daniel Rios Garza, Marcel C. van Verk, Martijn A. Huynen, Bas E. Dutilh",
-      image: "/assets/img/garza2018.png",
-      summary: "The environmental metabolome and metabolic potential of microorganisms are dominant and essential factors shaping microbial community composition",      
-      categories: ["genome-scale metabolic models", "computational metabolome"],
-      date: "2018-03-12",
-      link: "https://www.nature.com/articles/s41564-018-0124-8"
     },
     {
       id: 18,
