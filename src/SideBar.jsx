@@ -7,6 +7,7 @@ import {
   FaHome,
   FaList,
   FaTag,
+  FaTools,
   FaArchive,
   FaInfoCircle,
   FaGithub,
@@ -49,6 +50,12 @@ function SideBar() {
             <Link to="/archives" className="nav-link">
                 <FaTag className="nav-icon" />
                 Archives
+            </Link>
+          </li>
+          <li>
+            <Link to="/funded" className="nav-link">
+                <FaTools className="nav-icon" />
+                Projects
             </Link>
           </li>
           <li>

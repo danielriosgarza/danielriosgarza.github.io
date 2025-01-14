@@ -6,6 +6,7 @@ import Home from "./Home";
 import Categories from "./Categories";
 import Archives from "./Archives"; 
 import About from "./About";
+import FundedProjects from "./FundedProjects";
 
 function App() {
   // Example articles with multiple categories
@@ -269,6 +270,10 @@ function App() {
             <Route 
               path="/about" 
               element={<About />} 
+            />
+             <Route 
+              path="/funded" 
+              element={<FundedProjects />}
             />
 
           </Routes>

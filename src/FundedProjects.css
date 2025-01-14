@@ -1,0 +1,53 @@
+/* Import both Orbitron and Fira Code */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Fira+Code:wght@400;700&display=swap");
+
+.funded-container {
+  margin-left: 250px;
+  padding: 1rem;
+  max-width: 800px;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Main Header */
+.main-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 
+    0 0 4px #8ebaff,
+    0 0 10px #8ebaff,
+    0 0 20px #8ebaff;
+  animation: pastelNeonPulse 4s infinite;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  transition: box-shadow 0.2s ease;
+  font-size: 0.8rem;
+  white-space: pre-line;
+}
+
+.project-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+/* SPECIAL SUMMARY CLASS */
+.project-summary {
+  font-family: "Fira Code", monospace; /* code-like font */
+  text-align: justify;                /* or 'left', 'center', etc. */
+  line-height: 1.4;                   /* slightly more spacing */
+}
