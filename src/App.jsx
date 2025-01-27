@@ -23,6 +23,16 @@ function App() {
     },
     {
       id: 2,
+      title: "Chemistry-based vectors map the chemical space of natural biomes from untargeted mass spectrometry data",
+      authors: "Pilleriin Peets, Aristeidis Litos, Kai Duehrkop, Daniel Rios Garza, Justin J.J. van der Hooft,  Sebastian Boecker, Bas E. Dutilh",
+      image: "/assets/img/peets2025.png",
+      summary: `“Untargeted metabolomics can comprehensively map the chemical space of a biome, but is limited by low annotation rates (<10%). We used chemistry-based vectors, consisting of molecular fingerprints or chemical compound classes, predicted from mass spectrometry data, to characterize compounds and samples`,
+      categories: ["computational metabolome", "metabolomics"],
+      date: "2025-01-24",
+      link: "https://www.biorxiv.org/content/10.1101/2025.01.22.634253v1"
+    },
+    {
+      id: 3,
       title: "Discovery of alternative stable states in a synthetic human gut microbial community",
       image: "/assets/img/dgarza2024.png",
       authors:"Daniel Rios Garza, Bin Liu, Charlotte van de Velde ... Karoline Faust",
@@ -32,7 +42,7 @@ function App() {
       link: "https://www.biorxiv.org/content/10.1101/2024.11.28.625814v1"
     },
     {
-      id: 3,
+      id: 4,
       title: "Improving genome-scale metabolic models of incomplete genomes with deep learning",
       authors:"Meine D. Boer, Chrats Melkonian, Haris Zafeiropoulos, Andreas F. Haas, Daniel R. Garza, Bas E. Dutilh",
       image: "/assets/img/boer2023.jpg",
@@ -42,7 +52,7 @@ function App() {
       link: "https://www.cell.com/iscience/fulltext/S2589-0042(24)02574-4?uuid=uuid%3A5aee8e08-a32d-474f-a439-50399333f7d4"
     },
     {
-      id: 4,
+      id: 5,
       title: "Starvation responses impact interaction dynamics of human gut bacteria...",
       authors:"Bin Liu, Daniel Rios Garza, ...Karoline Faust",
       image: "/assets/img/liu2023.jpeg",
@@ -52,7 +62,7 @@ function App() {
       link: "https://doi.org/10.1038/s41396-023-01501-1"
     },
     {
-      id: 5,
+      id: 6,
       title: "Exploiting gut microbial traits and trade-offs in microbiome-based therapeutics",
       authors:"Bin Liu, Daniel Rios Garza, Pallabita Saha, Xingjian Zhou, Karoline Faust",
       image: "/assets/img/liu2024.png",
@@ -62,7 +72,7 @@ function App() {
       link: "https://www.nature.com/articles/s44222-024-00178-1"
     },
     {
-      id: 6,
+      id: 7,
       title: "miaSim: an R/Bioconductor package to easily simulate microbial community dynamics",
       authors:"Yu Gao, ... Leo Lahti, Karoline Faust, Daniel Rios Garza",
       image: "/assets/img/gao2023.jpg",
@@ -72,7 +82,7 @@ function App() {
       link: "https://doi.org/10.1111/2041-210X.14129"
     },
     {
-      id: 7,
+      id: 8,
       title: "Metabolic models of human gut microbiota: Advances and challenges",
       authors:"Daniel Rios Garza, Didier Gonze, Haris Zafeiropoulos, Bin Liu, Karoline Faust",
       image: "/assets/img/garza2023.jpg",
@@ -82,7 +92,7 @@ function App() {
       link: "https://www.cell.com/cell-systems/fulltext/S2405-4712(22)00437-9"
     },
     {
-      id: 8,
+      id: 9,
       title: "Towards predicting the environmental metabolome from metagenomics with a mechanistic model",
       authors:"Daniel Rios Garza, Marcel C. van Verk, Martijn A. Huynen, Bas E. Dutilh",
       image: "/assets/img/garza2018.png",
@@ -92,7 +102,7 @@ function App() {
       link: "https://www.nature.com/articles/s41564-018-0124-8"
     },
     {
-      id: 9,
+      id: 10,
       title: "Nutrition or nature: using elementary flux modes to disentangle ...prokaryote pan-genomes",
       authors:"Daniel R Garza, FA Bastiaan von Meijenfeldt, Bram van Dijk, Annemarie Boleij, Martijn A Huynen, Bas E Dutilh",
       image: "/assets/img/garza2022.png",
@@ -102,7 +112,7 @@ function App() {
       link: "https://link.springer.com/article/10.1186/s12862-022-02052-3"
     },
     {
-      id: 10,
+      id: 11,
       title: "Bacterial oncotraits rather than spatial organization are associated with dysplasia in ulcerative colitis",
       authors:"Carlijn E Bruggeling, Maarten te Groen, Daniel R Garza,...Annemarie Boleij",
       image: "/assets/img/bruggeling2024.jpeg",
@@ -112,7 +122,7 @@ function App() {
       link: "https://academic.oup.com/ecco-jcc/article/17/11/1870/7181091?login=true"
     },
     {
-      id: 11,
+      id: 12,
       title: "BCG-induced trained immunity enhances acellular pertussis vaccination responses...",
       authors:"Joshua Gillard, Bastiaan A. Blok, Daniel R. Garza, Prashanna Balaji Venkatasubramanian...",
       image: "/assets/img/gillard2022.png",
@@ -122,7 +132,7 @@ function App() {
       link: "https://www.nature.com/articles/s41541-022-00438-4"
     },
     {
-      id: 12,
+      id: 13,
       title: "A Prioritized and Validated Resource of Mitochondrial Proteins in Plasmodium...",
       authors:"Selma L van Esveld...Bas E Dutilh, Daniel R Garza...Martijn A Huynen",
       image: "/assets/img/esveld2021.png",
@@ -132,7 +142,7 @@ function App() {
       link: "https://journals.asm.org/doi/full/10.1128/msphere.00614-21"
     },
     {
-      id: 13,
+      id: 14,
       title: "Optimized bacterial DNA isolation method for microbiome analysis of human tissues",
       authors:"Carlijn E. Bruggeling, Daniel R. Garza, Soumia Achouiti, Wouter Mes, Bas E. Dutilh, Annemarie Bolei",
       image: "/assets/img/bruggeling2021.jpeg",
@@ -142,7 +152,7 @@ function App() {
       link: "https://onlinelibrary.wiley.com/doi/full/10.1002/mbo3.1191"
     },
     {
-      id: 14,
+      id: 15,
       title: "Novel insights from the Plasmodium falciparum sporozoite-specific proteome by probabilistic integration...",
       authors:"Lisette Meerstein-Kessel,Jeron Venhuizen,Daniel Garza, ..., Martijn A. Huynen",
       image: "/assets/img/meersteinkessel2021.png",
@@ -152,7 +162,7 @@ function App() {
       link: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008067"
     },
     {
-      id: 15,
+      id: 16,
       title: "Metabolic models predict bacterial passengers in colorectal cancer",
       authors:"Daniel Rios Garza, Rahwa Taddese, Jakob Wirbel, Georg Zeller, Annemarie Boleij, Martijn A. Huynen & Bas E. Dutilh",
       image: "/assets/img/garza2020.png",
@@ -162,7 +172,7 @@ function App() {
       link: "https://link.springer.com/article/10.1186/s40170-020-0208-9"
     },
     {
-      id: 16,
+      id: 17,
       title: "Growth rate alterations of human colorectal cancer cells by 157 gut bacteria",
       authors:"Rahwa Taddese,Daniel Rios Garza, ...Bas E. Dutilh, Annemarie Boleij",
       image: "/assets/img/taddese2020.jpg",
@@ -172,7 +182,7 @@ function App() {
       link: "https://doi.org/10.1080/19490976.2020.1799733"
     },
     {
-      id: 17,
+      id: 18,
       title: "Elucidating genomic gaps using phenotypic profiles",
       authors:"Daniel A. Cuevas, Daniel Garza...Robert A. Edwards",
       image: "/assets/img/cuevas2016.png",
@@ -182,7 +192,7 @@ function App() {
       link: "https://f1000research.com/articles/3-210"
     },
     {
-      id: 18,
+      id: 19,
       title: "From cultured to uncultured genome sequences: metagenomics and modeling microbial ecosystems",
       authors:"Daniel Rios Garza & Bas E. Dutilh",
       image: "/assets/img/garza2015.png",
@@ -192,7 +202,7 @@ function App() {
       link: "https://link.springer.com/article/10.1007/s00018-015-2004-1"
     },
     {
-      id: 19,
+      id: 20,
       title: "Comparative genomics of 274 Vibrio cholerae genomes reveals...",
       authors:"Bas E Dutilh, ...Daniel R Garza... Robert A Edwards",
       image: "/assets/img/dutilh2014.webp",
@@ -202,7 +212,7 @@ function App() {
       link: "https://link.springer.com/article/10.1186/1471-2164-15-654"
     },
     {
-      id: 20,
+      id: 21,
       title: "Genome-Wide Study of the Defective Sucrose Fermenter Strain of Vibrio cholerae...",
       authors:"Daniel Rios Garza, Cristiane C. Thompson...",
       image: "/assets/img/garza2012.png",
@@ -212,7 +222,7 @@ function App() {
       link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0037283"
     },
     {
-      id: 21,
+      id: 22,
       title: "Population and Genetic Study of Vibrio cholerae from the Amazon Environment...",
       authors:"Lena Líllian Canto de Sá Morais ,Daniel Rios Garza...",
       image: "/assets/img/garza2013.png",
@@ -222,7 +232,7 @@ function App() {
       link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081372"
     },
     {
-      id: 22,
+      id: 23,
       title: "Exploring microbial ecology and evolution with genome-scale metabolic models",
       authors:"Daniel Rios Garza [PhD thesis]",
       image: "/assets/img/animalocaris.png",
