@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Updated Node.js version
+          node-version: '18'  # Updated Node.js version to resolve `structuredClone` error
 
       # Step 3: Install dependencies
       - name: Install Dependencies
@@ -36,6 +36,9 @@ jobs:
 
           # Copy build output to docs
           cp -r dist/* docs/
+
+          # Create a .nojekyll file to disable Jekyll processing
+          touch docs/.nojekyll
 
           # Configure Git
           git config --global user.name "github-actions[bot]"
