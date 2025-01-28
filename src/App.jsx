@@ -27,7 +27,7 @@ function App() {
       authors: "Pilleriin Peets, Aristeidis Litos, Kai Duehrkop, Daniel Rios Garza, Justin J.J. van der Hooft,  Sebastian Boecker, Bas E. Dutilh",
       image: "/assets/img/peets2025.png",
       summary: `“Untargeted metabolomics can comprehensively map the chemical space of a biome, but is limited by low annotation rates (<10%). We used chemistry-based vectors, consisting of molecular fingerprints or chemical compound classes, predicted from mass spectrometry data, to characterize compounds and samples`,
-      categories: ["computational metabolome", "metabolomics"],
+      categories: ["computational metabolome", "metabolomics", "machine learning"],
       date: "2025-01-24",
       link: "https://www.biorxiv.org/content/10.1101/2025.01.22.634253v1"
     },
