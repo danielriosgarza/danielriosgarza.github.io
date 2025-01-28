@@ -14,11 +14,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Setup Node.js
+      # Step 2: Setup Node.js environment
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Specify the Node.js version you need
+          node-version: '18'  # Updated Node.js version
 
       # Step 3: Install dependencies
       - name: Install Dependencies
@@ -28,12 +28,22 @@ jobs:
       - name: Build
         run: npm run build  # Ensure your package.json has a build script
 
-      # Step 5: Deploy to GitHub Pages
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Vite's default build output directory
-          publish_branch: gh-pages  # Deployment branch
-          force_orphan: true  # Creates a new branch if it doesn't exist
-          commit_message: "Deploy Vite App to GitHub Pages"
+      # Step 5: Deploy to GitHub Pages (docs/ folder)
+      - name: Deploy to GitHub Pages
+        run: |
+          # Ensure the docs directory exists
+          mkdir -p docs
+
+          # Copy build output to docs
+          cp -r dist/* docs/
+
+          # Configure Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Add and commit changes
+          git add docs
+          git commit -m "Deploy Vite App to GitHub Pages" || echo "No changes to commit"
+
+          # Push changes to main branch
+          git push origin main
