@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Trigger on pushes to the main branch
 
+permissions:
+  contents: write  # Grant write access to repository contents
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -48,5 +51,5 @@ jobs:
           git add docs
           git commit -m "Deploy Vite App to GitHub Pages" || echo "No changes to commit"
 
-          # Push changes to main branch
+          # Push changes to main branch using GITHUB_TOKEN
           git push origin main
