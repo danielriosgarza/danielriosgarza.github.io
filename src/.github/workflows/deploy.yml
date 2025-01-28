@@ -1,0 +1,39 @@
+name: Build and Deploy Vite App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Specify the Node.js version you need
+
+      # Step 3: Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 4: Build the Vite app
+      - name: Build
+        run: npm run build  # Ensure your package.json has a build script
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # Vite's default build output directory
+          publish_branch: gh-pages  # Deployment branch
+          force_orphan: true  # Creates a new branch if it doesn't exist
+          commit_message: "Deploy Vite App to GitHub Pages"
